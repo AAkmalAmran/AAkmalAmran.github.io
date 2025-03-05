@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(209, 209, 233);
+}
+.profile {
+    margin-top: 20px;
+    padding: 10px;
+}
+.profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000; /* Mengubah warna teks menjadi putih */
+    transition: color 0.3s ease;
+    border: 1px solid #333; /* Menambahkan border */
+    padding: 5px; /* Menambahkan padding untuk jarak antara border dan teks */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
+}
+.social-links a:hover {
+    color: #007bff;
+    border-color: #007bff; /* Mengubah warna border saat hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Menambahkan shadow saat hover */
+}
