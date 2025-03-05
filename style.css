@@ -17,17 +17,25 @@ body {
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.social-links {
+    margin-top: 20px;
+}
 .social-links a {
     margin: 0 10px;
     text-decoration: none;
-    color: #000000; /* Mengubah warna teks menjadi putih */
+    color: #000000; 
     transition: color 0.3s ease;
-    border: 1px solid #333; /* Menambahkan border */
-    padding: 5px; /* Menambahkan padding untuk jarak antara border dan teks */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
+    border: 1px solid #333; 
+    padding: 5px 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: inline-flex;
+    align-items: center;
+}
+.social-links a i {
+    margin-right: 5px; 
 }
 .social-links a:hover {
     color: #007bff;
-    border-color: #007bff; /* Mengubah warna border saat hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Menambahkan shadow saat hover */
+    border-color: #007bff; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
