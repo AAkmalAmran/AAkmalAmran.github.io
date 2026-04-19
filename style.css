@@ -283,7 +283,8 @@ body {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Disesuaikan agar lebih rapi saat tombol dimasukkan */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 20px;
 }
 
@@ -293,6 +294,8 @@ body {
     border-radius: 15px;
     transition: all 0.3s ease;
     border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -316,12 +319,42 @@ body {
     font-size: 0.8rem;
     font-weight: 600;
     margin-bottom: 12px;
+    align-self: flex-start;
 }
 
-.project-card p:last-child {
-    margin: 0;
+.project-card p:nth-of-type(2) {
+    margin: 0 0 15px 0;
     color: var(--text-muted);
     font-size: 0.9rem;
+    flex-grow: 1; /* Mendorong tombol ke bawah agar sejajar */
+}
+
+/* Styling Tombol Repository GitHub */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: var(--text-main);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.project-link i {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+.project-link:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    color: white;
 }
 
 /* Footer & Utils */
